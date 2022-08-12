@@ -46,7 +46,7 @@ phone_numbers_list = set(phone_numbers_list)
 phone_numbers_list = list(phone_numbers_list)
 phone_numbers_list.sort()
 
-email_list = valid_results[2].sort()
+valid_results[2].sort()
 
 # def fix_non_dashes(list):
 #     for num in list:
@@ -54,7 +54,7 @@ email_list = valid_results[2].sort()
 #         num = '206-' + num
 
 with open("./emails.txt", "w") as email_file:
-    for email in email_list:
+    for email in valid_results[2]:
         email_file.write(str(email + "\n"))
 
 with open("./phone_numbers.txt", "w") as number_file:
